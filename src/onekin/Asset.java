@@ -10,23 +10,23 @@ public class Asset {
 	
 	public void method1 (){
 	//PV:IFCOND (pv:hasFeature('FA') and (not (pv:hasFeature('FB'))))
-	System.out.println("FA selected and not Feature B");
+	System.out.println("FA is selected and  Feature B is not");
 	 	//PV:IFCOND(pv:hasFeature('FC'))
-		System.out.println("FC selected. Nested");
+		System.out.println("FC is selected. It is Nested");
 		// PV:ENDCOND
 	// PV:ENDCOND
-	System.out.println("in between");
+	System.out.println("This does not belong to any feature");
 
 	//PV:IFCOND(pv:hasFeature:('FB'))
-	System.out.println("FC selected. Nested");
+	System.out.println("FB is selected");
 	//PV:ENDCOND
 	
 	//PV:IFCOND(pv:hasFeature('FA') and pv:hasFeature('FB'))
-	System.out.println("FA & FB is selected.");
+	System.out.println("Both FA and FB are selected.");
 	//PV:ENDCOND
 		
 	//PV:IFCOND(pv:hasFeature('FA') or pv:hasFeature('FC'))
-	System.out.println("FA or Fc are selected.");
+	System.out.println("Either FA or Fc is selected.");
 	//PV:ENDCOND
 	}
 }
